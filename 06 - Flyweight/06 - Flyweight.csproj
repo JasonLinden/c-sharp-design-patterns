@@ -51,6 +51,7 @@
     <Compile Include="Publication\ConcreteFlyweight\Book.cs" />
     <Compile Include="Publication\ConcreteFlyweight\GraphicNovel.cs" />
     <Compile Include="Publication\Flyweight Base\IPublication.cs" />
+    <Compile Include="Publication\FlyweightFactory\Library.cs" />
     <Compile Include="Publication\Illustrator.cs" />
     <Compile Include="Publication\PublicationType.cs" />
     <Compile Include="Publication\Publisher.cs" />
