@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{27A5C2FF-340F-41D8-B2BA-E60121194922}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>_01___Abstract_Factory</RootNamespace>
+    <AssemblyName>01 - Abstract Factory</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auto\Abstract Factory\IAutoFactory.cs" />
+    <Compile Include="Auto\Abstract Product\IAutomobile.cs" />
+    <Compile Include="Auto\Client\AutoFactory.cs" />
+    <Compile Include="Auto\Concrete Factory\BMWFactory.cs" />
+    <Compile Include="Auto\Concrete Factory\MiniFactory.cs" />
+    <Compile Include="Auto\Concrete Product\BMW740i.cs" />
+    <Compile Include="Auto\Concrete Product\BMWBase.cs" />
+    <Compile Include="Auto\Concrete Product\BMWM3.cs" />
+    <Compile Include="Auto\Concrete Product\MiniCooper.cs" />
+    <Compile Include="Auto\Concrete Product\MiniCooperS.cs" />
+    <Compile Include="Cars\Abstract Factory\CarFactory.cs" />
+    <Compile Include="Cars\Abstract Product\Convertible.cs" />
+    <Compile Include="Cars\Abstract Product\Coupe.cs" />
+    <Compile Include="Cars\Abstract Product\Sedan.cs" />
+    <Compile Include="Cars\Client\CarProducer.cs" />
+    <Compile Include="Cars\Concrete Factory\FordFactory.cs" />
+    <Compile Include="Cars\Concrete Factory\ToyotaFactory.cs" />
+    <Compile Include="Cars\Concrete Product\Camry.cs" />
+    <Compile Include="Cars\Concrete Product\Corolla.cs" />
+    <Compile Include="Cars\Concrete Product\MR2.cs" />
+    <Compile Include="Cars\Concrete Product\Mustang.cs" />
+    <Compile Include="Cars\Concrete Product\Probe.cs" />
+    <Compile Include="Cars\Concrete Product\Taurus.cs" />
+    <Compile Include="GameExample\Abstract Factory\NPCFactory.cs" />
+    <Compile Include="GameExample\Abstract Product\Player.cs" />
+    <Compile Include="GameExample\Client\NPCFactoryProducer.cs" />
+    <Compile Include="GameExample\Concrete Factory\EnemyFactory.cs" />
+    <Compile Include="GameExample\Concrete Factory\FriendlyFactory.cs" />
+    <Compile Include="GameExample\Concrete Product\FlyingEnemy.cs" />
+    <Compile Include="GameExample\Concrete Product\FlyingFriendly.cs" />
+    <Compile Include="GameExample\Concrete Product\WalkingEnemy.cs" />
+    <Compile Include="GameExample\Concrete Product\WalkingFriendly.cs" />
+    <Compile Include="GameExample\Enums\EnemyTypes.cs" />
+    <Compile Include="GameExample\Enums\FriendlyTypes.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

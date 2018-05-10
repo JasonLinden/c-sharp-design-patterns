@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="_02___Factory_Method.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AutoFactory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Auto.ConcreteFactory.BMWFactory</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
