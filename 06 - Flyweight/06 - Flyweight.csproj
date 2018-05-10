@@ -55,6 +55,10 @@
     <Compile Include="Publication\Illustrator.cs" />
     <Compile Include="Publication\PublicationType.cs" />
     <Compile Include="Publication\Publisher.cs" />
+    <Compile Include="Restaurant\ConcreteFlyweight\BaconMaster.cs" />
+    <Compile Include="Restaurant\ConcreteFlyweight\BBQKing.cs" />
+    <Compile Include="Restaurant\ConcreteFlyweight\VeggieSlider.cs" />
+    <Compile Include="Restaurant\FlyweightFactory\SliderFactory.cs" />
     <Compile Include="Restaurant\Flyweight\Slider.cs" />
   </ItemGroup>
   <ItemGroup>

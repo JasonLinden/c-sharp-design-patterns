@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _06___Flyweight.Restaurant.Flyweight
+﻿namespace _06___Flyweight.Restaurant.Flyweight
 {
-    class Slider
+    public abstract class Slider
     {
+        protected string Name;
+        protected string Cheese;
+        protected string Toppings;
+        protected decimal Price;
+
+        public abstract void Display(int orderTotal);
     }
 }
