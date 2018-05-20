@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FAC00C2A-CB10-46AB-A523-046D5261727D}</ProjectGuid>
+    <ProjectGuid>{C88BEB7C-4207-4363-866E-98C3F4CAE1A4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_05___Mediator</RootNamespace>
-    <AssemblyName>05 - Mediator</AssemblyName>
+    <RootNamespace>Momento</RootNamespace>
+    <AssemblyName>Momento</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,27 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GOT\ColleagueBase\IPerson.cs" />
-    <Compile Include="GOT\Colleague\Person.cs" />
-    <Compile Include="GOT\MediatorBase\ICrier.cs" />
-    <Compile Include="GOT\Mediator\Crier.cs" />
-    <Compile Include="Movies\ColleagueBase\ConcessionStand.cs" />
-    <Compile Include="Movies\Colleague\NorthConcessionStand.cs" />
-    <Compile Include="Movies\Colleague\SouthConcessionStand.cs" />
-    <Compile Include="Movies\MediatorBase\IMediator.cs" />
-    <Compile Include="Movies\Mediator\ConcessionsMediator.cs" />
+    <Compile Include="Person\Caretaker\PersonCaretaker.cs" />
+    <Compile Include="Person\Memento\PersonMemento.cs" />
+    <Compile Include="Person\Originator\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StockSales\ColleagueBase\StockColleague.cs" />
-    <Compile Include="StockSales\Colleague\GormanSlacks.cs" />
-    <Compile Include="StockSales\Colleague\JTPoorman.cs" />
-    <Compile Include="StockSales\MediatorBase\IStockMediator.cs" />
-    <Compile Include="StockSales\Mediator\StockMediator.cs" />
-    <Compile Include="StockSales\StockOffer.cs" />
+    <Compile Include="SalesProspect\Caretaker\ProspectMemory.cs" />
+    <Compile Include="SalesProspect\Memento\MementoClass.cs" />
+    <Compile Include="SalesProspect\Originator\SalesProspectOriginator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
