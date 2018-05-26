@@ -55,6 +55,13 @@
     <Compile Include="DVDPlayer\State\DVDPlayerState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Steak\ConcreteState\Medium.cs" />
+    <Compile Include="Steak\ConcreteState\MediumRare.cs" />
+    <Compile Include="Steak\ConcreteState\Rare.cs" />
+    <Compile Include="Steak\ConcreteState\Uncooked.cs" />
+    <Compile Include="Steak\ConcreteState\WellDone.cs" />
+    <Compile Include="Steak\Context\SteakContext.cs" />
+    <Compile Include="Steak\State\Doneness.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

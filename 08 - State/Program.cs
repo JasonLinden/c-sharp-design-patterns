@@ -1,5 +1,6 @@
 ﻿using _08___State.BankAccount.Context;
 using _08___State.DVDPlayer.Context;
+using _08___State.Steak.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,19 @@ namespace _08___State
             account.PayInterest();
             account.Withdraw(2000.00);
             account.Withdraw(1100.00);
+
+            //Let's cook a steak!
+            SteakContext steakies = new SteakContext("T-Bone");
+
+            // Apply temperature changes
+            steakies.AddTemp(120);
+            steakies.AddTemp(15);
+            steakies.AddTemp(15);
+            steakies.RemoveTemp(10); //Yes I know cooking doesn't work this way, bear with me.
+            steakies.RemoveTemp(15);
+            steakies.AddTemp(20);
+            steakies.AddTemp(20);
+            steakies.AddTemp(20);
 
             Console.ReadKey();
         }
